@@ -10,7 +10,33 @@
     <header>
       <h1>Register</h1>
     </header>
-    <main></main>
-    <footer>All Rights Reserved 2023</footer>
+    <main>
+      <form action="">
+        <label for="education">What is your education?</label>
+        <select name="education" id="education">
+          <option value="highSchool">High School</option>
+          <option value="bachelors">Bachelors</option>
+          <option value="masters">Masters</option>
+          <option value="doctorate">Doctorate</option>
+          <option value="other">Other</option>
+          <option value="">I prefer not to say</option>
+        </select>
+        <label for="languages"
+          >What is your favorite Programming Language?</label
+        >
+        <input list="languages" />
+        <datalist id="languages">
+          <option value="JAVA">JAVA</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="C">C</option>
+          <option value="C#">C#</option>
+        </datalist>
+
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer><p>All Rights Reserved 2023</p></footer>
   </body>
 </html>

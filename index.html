@@ -2,13 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Ivo Nikolov personal site" />
+    <meta name="keywords" content="Ivo,Nikolov,Personal,Site,Bio" />
+    <meta name="author" content="Ivo Nikolov" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      section {
+        background-color: pink;
+      }
+
+      article {
+        background-color: bisque;
+      }
+    </style>
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
     <title>My personal</title>
   </head>
   <body>
     <header>
-      <img src="./assets/img/large.jpg" />
+      <!-- <img src="./assets/img/large.jpg" /> -->
+
+      <picture>
+        <source media="(max-width:500px)" srcset="./assets/img/small.jpg" />
+        <source
+          media="(min-width:501px) and (max-width:1200px)"
+          srcset="./assets/img/mid.jpg"
+        />
+        <img
+          style="width: 100%"
+          alt="Header image"
+          src="./assets/img/large.jpg"
+        />
+      </picture>
       <h1>My personal site</h1>
       <nav>
         <ul>
@@ -25,13 +53,16 @@
         <p>
           My name is Ivo Nikolov. I live in Sofia and I have been a Software
           developer for more than 8 years. I have worked on Mobile and Web
-          Applications. I have been a leading developer for RSC for more than 3
-          years and have contributed to the <b>Stork Mobile Application</b>.
-          Also I love the <i>LOTR</i> trilogy and we cannot talk if you do not
-          like it. Worst moment of my life was when I received an Arsenal
-          football shirt instead of the Manchester United t-short. It was not
-          even the a good one, it was the one with th O2 logo and I remember it
-          costed 199.50 leva.
+          Applications. I have been a leading developer for
+          <abbr title="Rumen & Stanislav Consult">RSC</abbr> for more than 3
+          years and have contributed to the
+          <strong> Stork Mobile Application</strong>. Also I love the
+          <cite>LOTR</cite> trilogy and we cannot talk if you do not like it.
+          Worst moment of my life was when I received an Arsenal football shirt
+          instead of the Manchester United t-short. It was not even the a good
+          one, it was the one with th O<sub>2</sub> logo and I remember it
+          costed 199<sup>99</sup>
+          leva.
         </p>
       </section>
       <article>
@@ -85,27 +116,25 @@
           belief that with unwavering commitment and hard work, dreams can be
           turned into reality, and the impossible can be conquered.
         </p>
-        Written by John Doe
+        <address>Written by John Doe</address>
       </article>
       <section>
         <h2>Elon Musk about me:</h2>
-        <p>
-          "He is incredible. He will save our planet. He will show us the way.
-          Honestly I am thinking of gifting him my Tweeter and Tesla companies
-          and I am sure he will do a better job than me!"
-        </p>
-        Source:
-        <a href="https://trustmebro.square.site/"
-          >https://trustmebro.square.site/</a
-        >
+        <blockquote cite="https://trustmebro.square.site/">
+          <q>
+            He is incredible. He will save our planet. He will show us the way.
+            Honestly I am thinking of gifting him my Tweeter and Tesla companies
+            and I am sure he will do a better job than me!"
+          </q>
+        </blockquote>
       </section>
       <section>
         <h2>My capabilities</h2>
         <ul>
-          <li>HTML: 6</li>
-          <li>CSS: 4</li>
-          <li>JavaScript: 6</li>
-          <li>ReactJs: 5</li>
+          <li>HTML: <meter value="6" min="0" max="6"></meter></li>
+          <li>CSS: <meter value="4" min="0" max="6"></meter></li>
+          <li>JavaScript: <meter value="6" min="0" max="6"></meter></li>
+          <li>ReactJs: <meter value="5" min="0" max="6"></meter></li>
         </ul>
       </section>
       <section>
@@ -117,6 +146,18 @@
       </section>
       <section>
         <h2>Congratulatory Video</h2>
+        <video
+          width="640"
+          height="480"
+          src="./assets/video/congrats.mp4"
+          controls
+        >
+          Sorry, your browser doesn't support HTML5 <code>video</code>, but you
+          can download this video from the
+          <a href="https://www.youtube.com/watch?v=wGRF3GQ4Wdk" target="_blank"
+            >Internet Archive</a
+          >.
+        </video>
       </section>
       <section>
         <h2>Life goals</h2>
@@ -127,9 +168,28 @@
         </ul>
       </section>
       <section>
-        <h2>Write me a message</h2>
+        <form action="">
+          <fieldset>
+            <legend>Write me a message</legend>
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" />
+            </div>
+            <br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <br />
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
       </section>
     </main>
     <footer>All Rights Reserved. 2023</footer>
+
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
