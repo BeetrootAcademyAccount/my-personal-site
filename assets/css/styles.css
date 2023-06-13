@@ -40,7 +40,7 @@ body {
 }
 
 .main-header__user-options a {
-  color: #000000;
+  /* color: #000000; */
   font-weight: bold;
   font-size: 24px;
   text-decoration: none;
@@ -60,5 +60,5 @@ body {
 
 .main-nav__link a {
   text-decoration: none;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
