@@ -1,3 +1,7 @@
+* {
+  font-size: 20px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -61,4 +65,53 @@ body {
 .main-nav__link a {
   text-decoration: none;
   /* color: #ffffff; */
+}
+.main-section.goals ul,
+.small-goals {
+  display: inline-block;
+}
+
+.main-section.goals > ul {
+  background-color: yellow;
+}
+
+/* .main-section.goals li {
+  color: purple;
+} */
+
+.finish-course + li {
+  background-color: gray;
+}
+
+.finish-course5 ~ li {
+  background-color: lightblue;
+}
+
+.second-small-list li:first-of-type {
+  color: red;
+}
+
+.main-article p::first-line {
+  background-color: lightcoral;
+}
+
+.main-article p::first-letter {
+  font-size: 30px;
+}
+
+.main-article p::selection {
+  background-color: yellow;
+  color: green;
+}
+
+.second-small-list li::after {
+  content: "......";
+}
+
+.second-small-list li::before {
+  content: "---";
+}
+
+.second-small-list li:not(:last-child)::after {
+  content: ",";
 }

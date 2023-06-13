@@ -14,14 +14,11 @@
     <main>
       <form action="">
         <label for="name">Name:</label>
-        <input type="text" />
-        <br />
+        <input type="text" value="Ivo" required />
         <label for="password">Password:</label>
-        <input type="password" />
-        <br />
+        <input type="password" disabled />
         <label for="email">Email:</label>
-        <input type="email" />
-        <br />
+        <input type="email" disabled value="ivonikolov884@gmail" />
         <label for="education">What is your education?</label>
         <select name="education" id="education">
           <option value="highSchool">High School</option>
@@ -31,7 +28,6 @@
           <option value="other">Other</option>
           <option value="">I prefer not to say</option>
         </select>
-        <br />
         <label for="languages"
           >What is your favorite Programming Language?</label
         >
@@ -42,14 +38,17 @@
           <option value="C">C</option>
           <option value="C#">C#</option>
         </datalist>
-
-        <br />
         <input id="terms" type="radio" />
         <label for="terms">
-          I agree with the <a href="#">Terms &amp; conditions</a>
+          I agree with the
+          <a
+            href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/"
+            target="_blank"
+            >Terms &amp; conditions</a
+          >
         </label>
         <div>
-          <button type="submit">Submit</button>
+          <button type="submit" class="submit-btn">Submit</button>
         </div>
       </form>
     </main>

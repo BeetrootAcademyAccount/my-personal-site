@@ -6,3 +6,56 @@ body {
   );
   color: blue;
 }
+
+input {
+  border: none;
+  outline: none;
+}
+
+label,
+input,
+select {
+  display: block;
+  margin: 6px;
+}
+
+[type="radio"],
+[for="terms"] {
+  display: inline;
+  margin: 6px;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid {
+  border: 2px solid greenyellow;
+}
+
+.submit-btn {
+  background-color: aqua;
+}
+
+.submit-btn:hover {
+  background-color: green;
+  color: #ffffff;
+}
+
+input[type="email"]:disabled {
+  background-color: lightgray;
+  color: gray;
+}
+
+input[type="password"]:focus {
+  background-color: blue;
+}
+
+a:visited {
+  color: red;
+}
+
+label:not([for="terms"]) {
+  color: brown;
+}
