@@ -30,20 +30,21 @@ body {
 .main-nav {
   text-align: right;
   display: inline-block;
-  width: calc(100% - 84px);
+  width: calc(100% - 200px);
   vertical-align: middle;
 }
 
-.main-header__my-cv {
+.main-header__user-options {
   display: inline-block;
   vertical-align: middle;
 }
 
-.main-header__my-cv a {
+.main-header__user-options a {
   color: #000000;
   font-weight: bold;
   font-size: 24px;
   text-decoration: none;
+  padding-left: 12px;
 }
 
 .main-nav__links {
