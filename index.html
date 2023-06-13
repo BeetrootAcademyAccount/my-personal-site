@@ -7,52 +7,40 @@
     <meta name="author" content="Ivo Nikolov" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-      section {
-        background-color: pink;
-      }
-
-      article {
-        background-color: bisque;
-      }
-    </style>
-
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
     <title>My personal web page</title>
   </head>
   <body>
-    <header>
-      <picture>
-        <source media="(max-width:500px)" srcset="./assets/img/small.jpg" />
-        <source
-          media="(min-width:501px) and (max-width:1200px)"
-          srcset="./assets/img/mid.jpg"
-        />
-        <img
-          style="width: 100%"
-          alt="Header image"
-          src="./assets/img/large.jpg"
-        />
-      </picture>
-      <h1>My personal site</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About me</a></li>
-          <li><a href="#article">Article about me in NYT</a></li>
-          <li><a href="#elon">Elon Musk about me</a></li>
-          <li><a href="#capabilities">My capabilities</a></li>
-          <li><a href="#quote">Quote I live by</a></li>
-          <li><a href="#video">Congratulatory Video</a></li>
-          <li><a href="#goals">Life goals</a></li>
-          <li><a href="#message">Write me a message</a></li>
-          <li><a href="./pages/register.html">Subscribe to a newsletter</a></li>
+    <header class="main-header">
+      <div class="main-header__my-cv">
+        <a href="#"> My CV</a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__links">
+          <li class="main-nav__link"><a href="#about">About me</a></li>
+          <li class="main-nav__link">
+            <a href="#article">Article about me in NYT</a>
+          </li>
+          <!-- <li><a href="#elon">Elon Musk about me</a></li> -->
+          <li class="main-nav__link">
+            <a href="#capabilities">My capabilities</a>
+          </li>
+          <li class="main-nav__link"><a href="#quote">Quote I live by</a></li>
+          <li class="main-nav__link">
+            <a href="#video">Congratulatory Video</a>
+          </li>
+          <li class="main-nav__link"><a href="#goals">Life goals</a></li>
+          <li class="main-nav__link">
+            <a href="#message">Write me a message</a>
+          </li>
+          <!-- <li><a href="./pages/register.html">Subscribe to a newsletter</a></li> -->
         </ul>
       </nav>
     </header>
     <main>
-      <section id="about">
-        <h2>About me</h2>
+      <section id="about" class="main-section">
+        <h2 class="main-section__title">About me</h2>
         <p>
           My name is Ivo Nikolov. I live in Sofia and I have been a Software
           developer for more than 8 years. I have worked on Mobile and Web
@@ -68,7 +56,7 @@
           leva.
         </p>
       </section>
-      <article id="article">
+      <article id="article" class="main-article">
         <h2>Article about me in New York Times</h2>
         <h3>From Rags to IT Riches: The Inspiring Journey of Ivo Nikolov</h3>
         <p>
@@ -82,46 +70,51 @@
           Nikolov's childhood was marked by adversity. Growing up in a modest
           neighborhood, he faced numerous challenges and limited resources.
           However, even at a young age, Nikolov exhibited an insatiable
-          curiosity and an innate aptitude for technology. Despite the scarcity
-          of opportunities, he dreamt of exploring the vast world of computers
-          and sought to make a mark in the ever-evolving field of information
-          technology. Driven by his passion, Nikolov pursued his education with
-          relentless determination. He voraciously devoured every piece of
-          information he could find about computers, software development, and
-          IT systems. Despite the absence of formal training or access to
-          cutting-edge resources, he leveraged online tutorials, open-source
-          materials, and countless hours of self-study to expand his knowledge
-          base. Nikolov's remarkable drive and self-education opened doors that
-          led to his first breakthrough. He secured a scholarship to a renowned
-          IT institute, where his skills and dedication quickly caught the
-          attention of mentors and industry professionals. Recognizing his
-          potential, they offered him internships and mentorship opportunities
-          that further honed his abilities. The Entrepreneurial Spirit: As
-          Nikolov continued to accumulate experience and knowledge, he realized
-          that he possessed an entrepreneurial spirit. With a burning desire to
-          create something impactful, he ventured into launching his own
-          startup. Despite facing numerous setbacks and the inherent risks
-          associated with entrepreneurship, Nikolov's perseverance and
-          unwavering belief in his vision propelled him forward. Triumph and
-          Impact: Nikolov's startup thrived and rapidly gained recognition
-          within the industry. His innovative solutions and passion for
-          excellence attracted investors, clients, and a talented team of
-          individuals who shared his vision. Through his hard work and
-          dedication, he not only achieved financial success but also made a
-          significant impact in the IT world, revolutionizing the way businesses
-          operated and inspiring countless others to chase their dreams. Ivo
-          Nikolov's extraordinary journey from rags to IT riches serves as an
-          inspiration to individuals across the globe. His story reminds us that
-          regardless of our circumstances, passion, determination, and the
-          relentless pursuit of knowledge can defy all odds. Nikolov's success
-          not only transformed his own life but also serves as a beacon of hope
-          for those who aspire to achieve greatness. His tale reinforces the
-          belief that with unwavering commitment and hard work, dreams can be
-          turned into reality, and the impossible can be conquered.
+          curiosity and an innate aptitude for technology.
+        </p>
+        <p>
+          Despite the scarcity of opportunities, he dreamt of exploring the vast
+          world of computers and sought to make a mark in the ever-evolving
+          field of information technology. Driven by his passion, Nikolov
+          pursued his education with relentless determination. He voraciously
+          devoured every piece of information he could find about computers,
+          software development, and IT systems. Despite the absence of formal
+          training or access to cutting-edge resources, he leveraged online
+          tutorials, open-source materials, and countless hours of self-study to
+          expand his knowledge base. Nikolov's remarkable drive and
+          self-education opened doors that led to his first breakthrough. He
+          secured a scholarship to a renowned IT institute, where his skills and
+          dedication quickly caught the attention of mentors and industry
+          professionals. Recognizing his potential, they offered him internships
+          and mentorship opportunities that further honed his abilities. The
+          Entrepreneurial Spirit: As Nikolov continued to accumulate experience
+          and knowledge, he realized that he possessed an entrepreneurial
+          spirit. With a burning desire to create something impactful, he
+          ventured into launching his own startup. Despite facing numerous
+          setbacks and the inherent risks associated with entrepreneurship,
+          Nikolov's perseverance and unwavering belief in his vision propelled
+          him forward.
+        </p>
+        <p>
+          Nikolov's startup thrived and rapidly gained recognition within the
+          industry. His innovative solutions and passion for excellence
+          attracted investors, clients, and a talented team of individuals who
+          shared his vision. Through his hard work and dedication, he not only
+          achieved financial success but also made a significant impact in the
+          IT world, revolutionizing the way businesses operated and inspiring
+          countless others to chase their dreams. Ivo Nikolov's extraordinary
+          journey from rags to IT riches serves as an inspiration to individuals
+          across the globe. His story reminds us that regardless of our
+          circumstances, passion, determination, and the relentless pursuit of
+          knowledge can defy all odds. Nikolov's success not only transformed
+          his own life but also serves as a beacon of hope for those who aspire
+          to achieve greatness. His tale reinforces the belief that with
+          unwavering commitment and hard work, dreams can be turned into
+          reality, and the impossible can be conquered.
         </p>
         <address>Written by John Doe</address>
       </article>
-      <section id="elon">
+      <section id="elon" class="main-section">
         <h2>Elon Musk about me:</h2>
         <blockquote cite="https://trustmebro.square.site/">
           <q>
@@ -131,7 +124,7 @@
           </q>
         </blockquote>
       </section>
-      <section id="capabilities">
+      <section id="capabilities" class="main-section">
         <h2>My capabilities</h2>
         <ul>
           <li>HTML: <meter value="6" min="0" max="6"></meter></li>
@@ -140,14 +133,14 @@
           <li>ReactJs: <meter value="5" min="0" max="6"></meter></li>
         </ul>
       </section>
-      <section id="quote">
+      <section id="quote" class="main-section">
         <h2>Quote I live by:</h2>
         <blockquote>
           "He who is not courageous enough to take risks will accomplish nothing
           in life." <cite>— Muhammad Ali</cite>
         </blockquote>
       </section>
-      <section id="video">
+      <section id="video" class="main-section">
         <h2>Congratulatory Video</h2>
         <video
           width="640"
@@ -162,7 +155,7 @@
           >.
         </video>
       </section>
-      <section id="goals">
+      <section id="goals" class="main-section">
         <h2>Life goals</h2>
         <ul>
           <li>Become a developer</li>
@@ -170,7 +163,7 @@
           <li>Achieve world peace</li>
         </ul>
       </section>
-      <section id="message">
+      <section id="message" class="main-section">
         <form action="">
           <fieldset>
             <legend>Write me a message</legend>

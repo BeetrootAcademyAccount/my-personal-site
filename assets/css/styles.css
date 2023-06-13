@@ -1,7 +1,63 @@
 body {
-  background-color: lightgray;
+  margin: 0;
+  padding: 0;
 }
 
-/* img {
+.main-header {
   width: 100%;
-} */
+  background-color: #bab3b2;
+  padding: 24px 0;
+}
+
+.main-section {
+  padding: 12px;
+  margin: 12px;
+}
+
+.main-article {
+  padding: 12px;
+  margin: 12px;
+}
+
+.main-article {
+  background-color: bisque;
+}
+
+.main-section {
+  background-color: pink;
+}
+
+.main-nav {
+  text-align: right;
+  display: inline-block;
+  width: calc(100% - 84px);
+  vertical-align: middle;
+}
+
+.main-header__my-cv {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header__my-cv a {
+  color: #000000;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.main-nav__links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__link {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.main-nav__link a {
+  text-decoration: none;
+  color: #ffffff;
+}
