@@ -1,10 +1,31 @@
+@font-face {
+  font-family: Roboto;
+  src: url(./../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./../fonts/Roboto-Bold.ttf) format("truetype"),
+    url(./../fonts/Roboto-Bold.woff), url(./../fonts/Roboto-Bold.woff2);
+  font-weight: 700;
+}
+
 * {
   font-size: 20px;
+}
+
+.class {
+  font-weight: 700;
+  font-style: italic;
 }
 
 body {
   margin: 0;
   padding: 0;
+}
+
+.rights {
+  font: normal 700 40px/2 "Roboto", sans-serif;
 }
 
 .main-header {
@@ -114,4 +135,25 @@ body {
 
 .second-small-list li:not(:last-child)::after {
   content: ",";
+}
+
+#about p {
+  font-size: 22px;
+  font-stretch: ultra-condensed;
+  white-space: pre;
+  text-shadow: 5px 5px 2px rgb(192, 192, 192);
+}
+
+.main-section__title {
+  line-height: 2;
+  text-decoration: overline dotted;
+}
+
+.main-nav__link a {
+  text-decoration: none;
+}
+
+.main-nav__link a:focus,
+.main-nav__link a:hover {
+  text-decoration: underline white;
 }
